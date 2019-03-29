@@ -12,27 +12,27 @@ import java.util.Objects;
  */
 public class IntegerStorageChange {
 
-	/** The integer storage object. */
-	public final IntegerStorage istorage;
-	/** The integer value before the change has happened. */
-	public final int beforeChange;
-	/** The integer value after the change has happened. */
-	public final int afterChange;
-	
-	/**
-	 * Construct an instance of <tt>IntegerStorageChange</tt> with the specified
-	 * integer storage object, integer value before the change has happened and
-	 * integer value after the change has happened.
-	 * 
-	 * @param istorage integer storage object
-	 * @param beforeChange integer value before the change has happened
-	 * @param afterChange integer value after the change has happened
-	 */
-	public IntegerStorageChange(IntegerStorage istorage, int beforeChange, int afterChange) {
-		Objects.requireNonNull(istorage);
-		this.istorage = istorage;
-		this.beforeChange = beforeChange;
-		this.afterChange = afterChange;
-	}
-	
+    /** The integer storage object. */
+    public final IntegerStorage istorage;
+    /** The integer value before the change has happened. */
+    public final int beforeChange;
+    /** The integer value after the change has happened. */
+    public final int afterChange;
+
+    /**
+     * Construct an instance of <tt>IntegerStorageChange</tt> with the specified
+     * integer storage object, integer value before the change has happened and
+     * integer value after the change has happened.
+     *
+     * @param istorage integer storage object
+     * @param beforeChange integer value before the change has happened
+     * @param afterChange integer value after the change has happened
+     */
+    public IntegerStorageChange(IntegerStorage istorage, int beforeChange, int afterChange) {
+        Objects.requireNonNull(istorage);
+        this.istorage = istorage;
+        this.beforeChange = beforeChange;
+        this.afterChange = afterChange;
+    }
+
 }

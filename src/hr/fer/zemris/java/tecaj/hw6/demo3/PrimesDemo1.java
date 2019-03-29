@@ -8,17 +8,17 @@ package hr.fer.zemris.java.tecaj.hw6.demo3;
  */
 public class PrimesDemo1 {
 
-	/**
-	 * Program entry point.
-	 * 
-	 * @param args not used in this example
-	 */
-	public static void main(String[] args) {
-		PrimesCollection primesCollection = new PrimesCollection(5);
-		
-		for (Integer prime : primesCollection) {
-			System.out.println("Got prime: " + prime);
-		}
-	}
+    /**
+     * Program entry point.
+     *
+     * @param args not used in this example
+     */
+    public static void main(String[] args) {
+        PrimesCollection primesCollection = new PrimesCollection(5);
+
+        for (Integer prime : primesCollection) {
+            System.out.println("Got prime: " + prime);
+        }
+    }
 
 }

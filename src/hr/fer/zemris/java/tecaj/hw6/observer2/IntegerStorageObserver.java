@@ -11,11 +11,11 @@ package hr.fer.zemris.java.tecaj.hw6.observer2;
  */
 public interface IntegerStorageObserver {
 
-	/**
-	 * Notifies all the registered observers that a value has been changed.
-	 * 
-	 * @param change the object which represents an integer value change
-	 */
-	public void valueChanged(IntegerStorageChange change);
-	
+    /**
+     * Notifies all the registered observers that a value has been changed.
+     *
+     * @param change the object which represents an integer value change
+     */
+    public void valueChanged(IntegerStorageChange change);
+
 }

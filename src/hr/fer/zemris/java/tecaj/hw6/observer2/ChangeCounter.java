@@ -10,12 +10,12 @@ package hr.fer.zemris.java.tecaj.hw6.observer2;
  */
 public class ChangeCounter implements IntegerStorageObserver {
 
-	/** Number of times the value has been changed since registration. */
-	private int count = 0;
-	
-	@Override
-	public void valueChanged(IntegerStorageChange change) {
-		System.out.println("Number of value changes since tracking: " + ++count);
-	}
+    /** Number of times the value has been changed since registration. */
+    private int count = 0;
+
+    @Override
+    public void valueChanged(IntegerStorageChange change) {
+        System.out.println("Number of value changes since tracking: " + ++count);
+    }
 
 }

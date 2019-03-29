@@ -9,11 +9,11 @@ package hr.fer.zemris.java.tecaj.hw6.observer2;
  */
 public class SquareValue implements IntegerStorageObserver {
 
-	@Override
-	public void valueChanged(IntegerStorageChange change) {
-		int value = change.afterChange;
-		System.out.printf("Provided new value: %d, square is: %d%n",
-				value, value*value);
-	}
-	
+    @Override
+    public void valueChanged(IntegerStorageChange change) {
+        int value = change.afterChange;
+        System.out.printf("Provided new value: %d, square is: %d%n",
+                value, value*value);
+    }
+
 }

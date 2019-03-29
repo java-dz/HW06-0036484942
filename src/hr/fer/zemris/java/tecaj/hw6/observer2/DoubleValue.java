@@ -9,28 +9,28 @@ package hr.fer.zemris.java.tecaj.hw6.observer2;
  * @author Mario Bobic
  */
 public class DoubleValue implements IntegerStorageObserver {
-	
-	/** Number of times left before deregistration. */
-	private int count;
 
-	/**
-	 * Constructs an instance of <tt>DoubleValue</tt> with the specified number
-	 * of times the double value will be written before deregistration.
-	 * 
-	 * @param n number of times the double value will be written before deregistration
-	 */
-	public DoubleValue(int n) {
-		count = n;
-	}
+    /** Number of times left before deregistration. */
+    private int count;
 
-	@Override
-	public void valueChanged(IntegerStorageChange change) {
-		if (count > 0) {
-			System.out.println("Double value: " + 2*change.afterChange);
-			count--;
-		} else {
-			change.istorage.removeObserver(this);
-		}
-	}
+    /**
+     * Constructs an instance of <tt>DoubleValue</tt> with the specified number
+     * of times the double value will be written before deregistration.
+     *
+     * @param n number of times the double value will be written before deregistration
+     */
+    public DoubleValue(int n) {
+        count = n;
+    }
+
+    @Override
+    public void valueChanged(IntegerStorageChange change) {
+        if (count > 0) {
+            System.out.println("Double value: " + 2*change.afterChange);
+            count--;
+        } else {
+            change.istorage.removeObserver(this);
+        }
+    }
 
 }
